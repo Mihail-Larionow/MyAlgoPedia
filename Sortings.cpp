@@ -50,7 +50,7 @@ void insertionSort(int arr[], int size_t)
     }
 }
 
-// Really quick
+// Average: O(n*log(n)), Worst: O(n*n)
 void quickSort(int arr[], int start, int end)
 {
     if (start >= end)
@@ -75,12 +75,70 @@ void quickSort(int arr[], int start, int end)
     quickSort(arr, left, end);
 }
 
+// Average: O(n*log(n)), Worst: O(n*log(n))
+void mergeSort(int arr[], int start, int end)
+{
+    if (start >= end)
+        return;
+
+    int middle = start + (end - start) / 2;
+    mergeSort(arr, start, middle);
+    mergeSort(arr, middle + 1, end);
+
+    int leftSize = middle - start + 1;
+    int rightSize = end - middle;
+
+    int *leftArray = new int[leftSize];
+    int *rightArray = new int[rightSize];
+
+    for (int i = 0; i < leftSize; i++)
+        leftArray[i] = arr[start + i];
+    for (int i = 0; i < rightSize; i++)
+        rightArray[i] = arr[middle + 1 + i];
+
+    int leftIndex = 0;
+    int rightIndex = 0;
+    int mergeIndex = start;
+
+    while (leftIndex < leftSize && rightIndex < rightSize)
+    {
+        if (leftArray[leftIndex] <= rightArray[rightIndex])
+        {
+            arr[mergeIndex] = leftArray[leftIndex];
+            leftIndex++;
+        }
+        else
+        {
+            arr[mergeIndex] = rightArray[rightIndex];
+            rightIndex++;
+        }
+        mergeIndex++;
+    }
+
+    while (leftIndex < leftSize)
+    {
+        arr[mergeIndex] = leftArray[leftIndex];
+        leftIndex++;
+        mergeIndex++;
+    }
+
+    while (rightIndex < rightSize)
+    {
+        arr[mergeIndex] = rightArray[rightIndex];
+        rightIndex++;
+        mergeIndex++;
+    }
+
+    delete leftArray;
+    delete rightArray;
+}
+
 int main()
 {
     int arr[5]{3, 2, 1, 5, 4};
     int size_t = sizeof(arr) / sizeof(arr[0]);
 
-    quickSort(arr, 0, size_t - 1);
+    mergeSort(arr, 0, size_t - 1);
 
     for (auto &&i : arr)
     {
