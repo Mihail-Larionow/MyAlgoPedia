@@ -133,6 +133,10 @@ void mergeSort(int arr[], int start, int end)
     delete rightArray;
 }
 
+void heapSort(int arr[], int size_t)
+{
+}
+
 int main()
 {
     int arr[5]{3, 2, 1, 5, 4};
