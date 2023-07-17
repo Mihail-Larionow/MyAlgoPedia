@@ -133,8 +133,35 @@ void mergeSort(int arr[], int start, int end)
     delete rightArray;
 }
 
+int heapify(int arr[], int i, int size_t)
+{
+    int left = i * 2 + 1;
+    int right = i * 2 + 2;
+    int largest = i;
+
+    if (left < size_t && arr[left] > arr[largest])
+        largest = left;
+    if (right < size_t && arr[right] > arr[largest])
+        largest = right;
+    if (i != largest)
+    {
+        std::swap(arr[i], arr[largest]);
+        heapify(arr, largest, size_t);
+    }
+}
+
+//
 void heapSort(int arr[], int size_t)
 {
+    for (int i = size_t / 2 - 1; i >= 0; i--)
+    {
+        heapify(arr, i, size_t);
+    }
+    for (int i = size_t - 1; i >= 0; i--)
+    {
+        std::swap(arr[i], arr[0]);
+        heapify(arr, 0, i);
+    }
 }
 
 int main()
@@ -142,7 +169,7 @@ int main()
     int arr[5]{3, 2, 1, 5, 4};
     int size_t = sizeof(arr) / sizeof(arr[0]);
 
-    mergeSort(arr, 0, size_t - 1);
+    heapSort(arr, size_t);
 
     for (auto &&i : arr)
     {
