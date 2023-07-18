@@ -150,7 +150,7 @@ int heapify(int arr[], int i, int size_t)
     }
 }
 
-//
+// Average: O(n*log(n)), Worst: O(n*log(n))
 void heapSort(int arr[], int size_t)
 {
     for (int i = size_t / 2 - 1; i >= 0; i--)
