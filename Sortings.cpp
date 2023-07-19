@@ -75,16 +75,8 @@ void quickSort(int arr[], int start, int end)
     quickSort(arr, left, end);
 }
 
-// Average: O(n*log(n)), Worst: O(n*log(n))
-void mergeSort(int arr[], int start, int end)
+void merge(int arr[], int start, int middle, int end)
 {
-    if (start >= end)
-        return;
-
-    int middle = start + (end - start) / 2;
-    mergeSort(arr, start, middle);
-    mergeSort(arr, middle + 1, end);
-
     int leftSize = middle - start + 1;
     int rightSize = end - middle;
 
@@ -133,6 +125,19 @@ void mergeSort(int arr[], int start, int end)
     delete rightArray;
 }
 
+// Average: O(n*log(n)), Worst: O(n*log(n))
+void mergeSort(int arr[], int start, int end)
+{
+    if (start >= end)
+        return;
+
+    int middle = start + (end - start) / 2;
+    mergeSort(arr, start, middle);
+    mergeSort(arr, middle + 1, end);
+
+    merge(arr, start, middle, end);
+}
+
 int heapify(int arr[], int i, int size_t)
 {
     int left = i * 2 + 1;
@@ -143,6 +148,7 @@ int heapify(int arr[], int i, int size_t)
         largest = left;
     if (right < size_t && arr[right] > arr[largest])
         largest = right;
+        
     if (i != largest)
     {
         std::swap(arr[i], arr[largest]);
@@ -166,10 +172,10 @@ void heapSort(int arr[], int size_t)
 
 int main()
 {
-    int arr[5]{3, 2, 1, 5, 4};
+    int arr[10]{9, 6, 7, 3, 2, 1, 5, 8, 10, 4};
     int size_t = sizeof(arr) / sizeof(arr[0]);
 
-    heapSort(arr, size_t);
+    mergeSort(arr, 0, size_t);
 
     for (auto &&i : arr)
     {
