@@ -46,6 +46,38 @@ int height(Node *node)
     return std::max(height(node->left), height(node->right)) + 1;
 }
 
+int getMin(Node *node)
+{
+    if (node == NULL)
+    {
+        return -1;
+    }
+    else if (node->left == NULL)
+    {
+        return node->value;
+    }
+    else
+    {
+        return getMin(node->left);
+    }
+}
+
+int getMax(Node *node)
+{
+    if (node == NULL)
+    {
+        return -1;
+    }
+    else if (node->right == NULL)
+    {
+        return node->value;
+    }
+    else
+    {
+        return getMax(node->right);
+    }
+}
+
 int main()
 {
     int arr[10]{5, 6, 7, 3, 2, 1, 9, 8, 10, 4};
@@ -56,9 +88,11 @@ int main()
 
     for (int i = 1; i < size_t; i++)
     {
-        addNode(root, arr[i], 5 * i);
+        addNode(root, arr[i], i);
     }
 
     printTree(root);
     printf("\nTree height: %i", height(root));
+    printf("\nIndex of minimum: %i", getMin(root));
+    printf("\nIndex of maximum: %i", getMax(root));
 }
