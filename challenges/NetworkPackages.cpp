@@ -70,5 +70,4 @@ int main()
         queue.pop();
     }
 
-    return 0;
 }
