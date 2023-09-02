@@ -138,7 +138,7 @@ void mergeSort(int arr[], int start, int end)
     merge(arr, start, middle, end);
 }
 
-int heapify(int arr[], int i, int size_t)
+void heapify(int arr[], int i, int size_t)
 {
     int left = i * 2 + 1;
     int right = i * 2 + 2;
@@ -175,7 +175,7 @@ int main()
     int arr[10]{9, 6, 7, 3, 2, 1, 5, 8, 10, 4};
     int size_t = sizeof(arr) / sizeof(arr[0]);
 
-    mergeSort(arr, 0, size_t);
+    heapSort(arr, size_t);
 
     for (auto &&i : arr)
     {
