@@ -4,6 +4,17 @@
 
 const int INF = 1e9;
 
+void dfs(std::vector<std::vector<int>> &graph, int v, std::vector<bool> &visited)
+{
+    visited[v] = true;
+    std::cout << v << " ";
+    for (int to : graph[v])
+    {
+        if (!visited[to])
+            dfs(graph, to, visited);
+    }
+}
+
 std::vector<int> bfs(std::vector<std::vector<int>> &graph, int start)
 {
     std::vector<int> dist(graph.size(), INF);
@@ -35,6 +46,7 @@ int main()
     std::cin >> n >> m >> x;
 
     std::vector<std::vector<int>> graph(n);
+    std::vector<bool> visited(n, false);
 
     for (int i = 0; i < m; i++)
     {
@@ -52,4 +64,6 @@ int main()
         else
             std::cout << "ERR";
     }
+
+    dfs(graph, x, visited);
 }
