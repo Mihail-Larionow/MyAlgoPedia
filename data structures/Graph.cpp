@@ -65,5 +65,7 @@ int main()
             std::cout << "ERR";
     }
 
+    std::cout << "\n";
+
     dfs(graph, x, visited);
 }
