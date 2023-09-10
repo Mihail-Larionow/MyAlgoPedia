@@ -16,6 +16,7 @@ public:
 
     void addEdge(int from, int to, int distance, bool oriented)
     {
+        edges++;
         graph[from].push_back(to);
         if (!oriented)
             graph[to].push_back(from);
@@ -71,7 +72,6 @@ private:
         }
         return dist;
     }
-
 };
 
 int main()
