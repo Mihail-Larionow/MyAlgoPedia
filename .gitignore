@@ -5,3 +5,9 @@
 tempCodeRunnerFile.cpp
 .idea/workspace.xml
 .idea/vcs.xml
+*.iml
+challenges/.idea/kotlinc.xml
+challenges/.idea/libraries/KotlinJavaRuntime.xml
+challenges/.idea/misc.xml
+challenges/.idea/modules.xml
+challenges/.idea/vcs.xml
