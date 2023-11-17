@@ -5,3 +5,7 @@ fun euclideanAlgorithm(a: Int, b: Int): Int{
         return b
     return euclideanAlgorithm(b % a, a)
 }
+
+fun main(){
+    println(euclideanAlgorithm(21, 12))
+}
