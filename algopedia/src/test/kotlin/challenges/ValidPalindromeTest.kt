@@ -26,6 +26,7 @@ class ValidPalindromeTest {
 
         assertEquals(expected = expected, actual = actual)
     }
+
     @Test
     fun `should return true third`(){
         val str = " "

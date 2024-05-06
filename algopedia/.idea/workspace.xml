@@ -7,13 +7,15 @@
     <list default="true" id="9b31077f-b415-4292-859e-34011182f51b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/algorithms/BinarySearch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/algorithms/BinarySearch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/algorithms/BinarySearchTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/algorithms/BinarySearchTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/challenges/ValidPalindromeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/challenges/ValidPalindromeTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="0" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -60,7 +62,9 @@
     "Gradle.Build algopedia.executor": "Run",
     "Gradle.QuickSortTest.should sort a sorted array.executor": "Run",
     "Gradle.QuickSortTest.should sort an unsorted array.executor": "Debug",
+    "Gradle.SummaryRangesTest.executor": "Run",
     "Gradle.Tests in 'algopedia'.executor": "Coverage",
+    "Gradle.Tests in 'algopedia.test'.executor": "Coverage",
     "Gradle.Tests in 'algorithms'.executor": "Run",
     "Gradle.ValidPalindromeTest.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
@@ -87,7 +91,7 @@
       <recent name="algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ValidPalindromeTest">
+  <component name="RunManager" selected="Gradle.Tests in 'algopedia.test'">
     <configuration name="BreadthFirstSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -112,7 +116,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="QuickSortTest.should sort a sorted array" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SummaryRangesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -125,7 +129,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;algorithms.QuickSortTest.should sort a sorted array&quot;" />
+            <option value="&quot;challenges.SummaryRangesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -136,7 +140,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'algopedia'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'algopedia.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -208,11 +212,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'algopedia.test'" />
+        <item itemvalue="Gradle.SummaryRangesTest" />
         <item itemvalue="Gradle.ValidPalindromeTest" />
         <item itemvalue="Gradle.BreadthFirstSearchTest" />
         <item itemvalue="Gradle.Tests in 'algorithms'" />
-        <item itemvalue="Gradle.QuickSortTest.should sort a sorted array" />
-        <item itemvalue="Gradle.Tests in 'algopedia'" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +236,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715019936991</updated>
-      <workItem from="1715019938013" duration="7834000" />
+      <workItem from="1715019938013" duration="10823000" />
     </task>
     <servers />
   </component>
@@ -242,5 +246,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algopedia$Tests_in__algopedia_.ic" NAME="Tests in 'algopedia' Coverage Results" MODIFIED="1715021303203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
     <SUITE FILE_PATH="coverage/algopedia$MainKt.ic" NAME="MainKt Coverage Results" MODIFIED="1715025654797" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+    <SUITE FILE_PATH="coverage/algopedia$Tests_in__algopedia_test_.ic" NAME="Tests in 'algopedia.test' Coverage Results" MODIFIED="1715031464881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
   </component>
 </project>
