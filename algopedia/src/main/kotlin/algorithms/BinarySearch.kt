@@ -2,7 +2,7 @@ package algorithms
 
 class BinarySearch {
 
-    fun execute(arr: List<Int>, value: Int): Int{
+    fun execute(arr: IntArray, value: Int): Int{
         var start = 0
         var end = arr.size - 1
 
@@ -18,4 +18,5 @@ class BinarySearch {
 
         return -1
     }
+
 }
