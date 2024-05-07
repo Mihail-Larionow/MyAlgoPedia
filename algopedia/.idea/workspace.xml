@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b31077f-b415-4292-859e-34011182f51b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/challenges/ValidPalindromeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/challenges/ValidPalindromeTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2g6ZLYIzxxEYy3dhrsMJwFfUhW3" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -60,6 +60,13 @@
     "Gradle.BinarySearchTest.shouldn't return key.executor": "Run",
     "Gradle.BreadthFirstSearchTest.executor": "Run",
     "Gradle.Build algopedia.executor": "Run",
+    "Gradle.ConsecutiveCharactersTest.executor": "Run",
+    "Gradle.MergeSortedArrayTest.executor": "Run",
+    "Gradle.MergeSortedArrayTest.should return second array.executor": "Run",
+    "Gradle.MergeTwoSortedListsTest.executor": "Run",
+    "Gradle.MergeTwoSortedListsTest.should return empty list.executor": "Run",
+    "Gradle.MergeTwoSortedListsTest.should return list1.executor": "Run",
+    "Gradle.MergeTwoSortedListsTest.should return list2.executor": "Run",
     "Gradle.QuickSortTest.should sort a sorted array.executor": "Run",
     "Gradle.QuickSortTest.should sort an unsorted array.executor": "Debug",
     "Gradle.SummaryRangesTest.executor": "Run",
@@ -67,6 +74,7 @@
     "Gradle.Tests in 'algopedia.test'.executor": "Coverage",
     "Gradle.Tests in 'algorithms'.executor": "Run",
     "Gradle.ValidPalindromeTest.executor": "Run",
+    "Gradle.ValidParenthesesTest.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -78,6 +86,9 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/Projects/Projects/Algorithms and Data Structures/algopedia/src/main/kotlin/Main.kt",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -88,11 +99,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="challenges" />
       <recent name="algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Tests in 'algopedia.test'">
-    <configuration name="BreadthFirstSearchTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ValidParenthesesTest">
+    <configuration name="ConsecutiveCharactersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +117,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;algorithms.BreadthFirstSearchTest&quot;" />
+            <option value="&quot;challenges.ConsecutiveCharactersTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +128,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SummaryRangesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MergeSortedArrayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +141,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.SummaryRangesTest&quot;" />
+            <option value="&quot;challenges.MergeSortedArrayTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,29 +152,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="Tests in 'algopedia.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Tests in 'algorithms'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MergeSortedArrayTest.should return second array" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +165,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;algorithms.*&quot;" />
+            <option value="&quot;challenges.MergeSortedArrayTest.should return second array&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -186,7 +176,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ValidPalindromeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MergeTwoSortedListsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -199,7 +189,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.ValidPalindromeTest&quot;" />
+            <option value="&quot;challenges.MergeTwoSortedListsTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ValidParenthesesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;challenges.ValidParenthesesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Tests in 'algopedia.test'" />
-        <item itemvalue="Gradle.SummaryRangesTest" />
-        <item itemvalue="Gradle.ValidPalindromeTest" />
-        <item itemvalue="Gradle.BreadthFirstSearchTest" />
-        <item itemvalue="Gradle.Tests in 'algorithms'" />
+        <item itemvalue="Gradle.ValidParenthesesTest" />
+        <item itemvalue="Gradle.ConsecutiveCharactersTest" />
+        <item itemvalue="Gradle.MergeSortedArrayTest.should return second array" />
+        <item itemvalue="Gradle.MergeSortedArrayTest" />
+        <item itemvalue="Gradle.MergeTwoSortedListsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +250,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715019936991</updated>
-      <workItem from="1715019938013" duration="10823000" />
+      <workItem from="1715019938013" duration="10866000" />
+      <workItem from="1715073033343" duration="17268000" />
     </task>
     <servers />
   </component>
