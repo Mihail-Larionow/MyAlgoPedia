@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b31077f-b415-4292-859e-34011182f51b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -61,14 +60,19 @@
     "Gradle.BreadthFirstSearchTest.executor": "Run",
     "Gradle.Build algopedia.executor": "Run",
     "Gradle.ConsecutiveCharactersTest.executor": "Run",
+    "Gradle.IsSubsequenceTest.executor": "Run",
+    "Gradle.JewelsAndStonesTest.executor": "Run",
     "Gradle.MergeSortedArrayTest.executor": "Run",
     "Gradle.MergeSortedArrayTest.should return second array.executor": "Run",
     "Gradle.MergeTwoSortedListsTest.executor": "Run",
     "Gradle.MergeTwoSortedListsTest.should return empty list.executor": "Run",
     "Gradle.MergeTwoSortedListsTest.should return list1.executor": "Run",
     "Gradle.MergeTwoSortedListsTest.should return list2.executor": "Run",
+    "Gradle.MissingNumberTest.executor": "Run",
     "Gradle.QuickSortTest.should sort a sorted array.executor": "Run",
     "Gradle.QuickSortTest.should sort an unsorted array.executor": "Debug",
+    "Gradle.RemoveDuplicatesTest.executor": "Run",
+    "Gradle.ReverseWordsTest.executor": "Run",
     "Gradle.SummaryRangesTest.executor": "Run",
     "Gradle.Tests in 'algopedia'.executor": "Coverage",
     "Gradle.Tests in 'algopedia.test'.executor": "Coverage",
@@ -103,8 +107,8 @@
       <recent name="algorithms" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ValidParenthesesTest">
-    <configuration name="ConsecutiveCharactersTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager">
+    <configuration name="IsSubsequenceTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -117,7 +121,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.ConsecutiveCharactersTest&quot;" />
+            <option value="&quot;challenges.IsSubsequenceTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -128,7 +132,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MergeSortedArrayTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JewelsAndStonesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -141,7 +145,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.MergeSortedArrayTest&quot;" />
+            <option value="&quot;challenges.JewelsAndStonesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,7 +156,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MergeSortedArrayTest.should return second array" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="MissingNumberTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +169,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.MergeSortedArrayTest.should return second array&quot;" />
+            <option value="&quot;challenges.MissingNumberTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,7 +180,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="MergeTwoSortedListsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RemoveDuplicatesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -189,7 +193,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.MergeTwoSortedListsTest&quot;" />
+            <option value="&quot;challenges.RemoveDuplicatesTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -200,7 +204,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ValidParenthesesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ReverseWordsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -213,7 +217,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;challenges.ValidParenthesesTest&quot;" />
+            <option value="&quot;challenges.ReverseWordsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -226,11 +230,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ValidParenthesesTest" />
-        <item itemvalue="Gradle.ConsecutiveCharactersTest" />
-        <item itemvalue="Gradle.MergeSortedArrayTest.should return second array" />
-        <item itemvalue="Gradle.MergeSortedArrayTest" />
-        <item itemvalue="Gradle.MergeTwoSortedListsTest" />
+        <item itemvalue="Gradle.ReverseWordsTest" />
+        <item itemvalue="Gradle.IsSubsequenceTest" />
+        <item itemvalue="Gradle.RemoveDuplicatesTest" />
+        <item itemvalue="Gradle.MissingNumberTest" />
+        <item itemvalue="Gradle.JewelsAndStonesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715019936991</updated>
       <workItem from="1715019938013" duration="10866000" />
-      <workItem from="1715073033343" duration="17268000" />
+      <workItem from="1715073033343" duration="30419000" />
     </task>
     <servers />
   </component>
