@@ -1,9 +1,13 @@
 import algorithms.BinarySearch
+import challenges.TwoSum
 
 fun main(args: Array<String>) {
 
-    val arr = listOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-    val bs = BinarySearch()
+    val nums = readln().split(",").map { it.toInt() }.toIntArray()
+    val target = readln().toInt()
+    val algorithm = TwoSum()
 
-    println(bs.execute(arr, 6))
+    algorithm.solve(nums = nums,target = target).forEach {
+        println(it)
+    }
 }

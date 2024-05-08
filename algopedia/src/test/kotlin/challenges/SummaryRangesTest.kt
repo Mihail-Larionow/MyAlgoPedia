@@ -1,6 +1,7 @@
 package challenges
 
 import org.junit.jupiter.api.Test
+import kotlin.test.assertContentEquals
 import kotlin.test.assertEquals
 
 class SummaryRangesTest {
@@ -14,7 +15,7 @@ class SummaryRangesTest {
         val expected = listOf("0->2","4->5","7")
         val actual = algorithm.solve(nums = nums)
 
-        assertEquals(expected = expected, actual = actual)
+        assertContentEquals(expected = expected, actual = actual)
     }
 
     @Test
@@ -24,7 +25,7 @@ class SummaryRangesTest {
         val expected = listOf("0","2->4","6","8->9")
         val actual = algorithm.solve(nums = nums)
 
-        assertEquals(expected = expected, actual = actual)
+        assertContentEquals(expected = expected, actual = actual)
     }
 
     @Test
@@ -34,7 +35,7 @@ class SummaryRangesTest {
         val expected = listOf("-2147483648->-2147483647", "2147483647")
         val actual = algorithm.solve(nums = nums)
 
-        assertEquals(expected = expected, actual = actual)
+        assertContentEquals(expected = expected, actual = actual)
     }
 
     @Test
@@ -44,7 +45,7 @@ class SummaryRangesTest {
         val expected = listOf<String>()
         val actual = algorithm.solve(nums = nums)
 
-        assertEquals(expected = expected, actual = actual)
+        assertContentEquals(expected = expected, actual = actual)
     }
 
 }
