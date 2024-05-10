@@ -1,13 +1,10 @@
-import algorithms.BinarySearch
-import challenges.TwoSum
+import challenges.MaxDistToClosest
 
 fun main(args: Array<String>) {
 
-    val nums = readln().split(",").map { it.toInt() }.toIntArray()
-    val target = readln().toInt()
-    val algorithm = TwoSum()
+    val arr = readln().split(",").map { it.toInt() }.toIntArray()
+    val algorithm = MaxDistToClosest()
 
-    algorithm.solve(nums = nums,target = target).forEach {
-        println(it)
-    }
+    val res = algorithm.solve(seats = arr)
+    println(res)
 }
